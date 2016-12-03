@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SnapLoc</string>
+    <string name="button">Take Pic!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="name">Click the image to view where it was taken!</string>
+    <string name="share">Share!</string>
+    <string name="view_image">View Image</string>
+    <string name="click_the_image_to_view_where_it_was_taken">Click the image to view it\'s location!</string>
+</resources>

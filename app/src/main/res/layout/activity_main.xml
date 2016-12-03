@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+>
+
+    <Button
+        android:text="@string/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareImage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/shareImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:visibility="invisible"
+        android:ems="10"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText"
+        android:textColor="@color/colorWhite"
+        android:textColorHighlight="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="3sp" />
+
+    <TextView
+        android:text="@string/click_the_image_to_view_where_it_was_taken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:contentDescription="Pic placeholder"
+        android:tag="origImage"
+        android:onClick="setOnClickForImage"
+        android:layout_above="@+id/shareImage"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
